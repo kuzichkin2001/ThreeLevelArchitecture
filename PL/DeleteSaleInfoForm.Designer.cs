@@ -76,7 +76,7 @@ namespace PL
             this.Controls.Add(this.deleteSaleInfoTextBox);
             this.Controls.Add(this.deleteSaleInfoLabel);
             this.Name = "DeleteSaleInfoForm";
-            this.Text = "DeleteSaleInfoForm";
+            this.Text = "Delete sale information";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

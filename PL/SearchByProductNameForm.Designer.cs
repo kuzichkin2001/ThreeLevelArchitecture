@@ -143,7 +143,7 @@ namespace PL
             this.Controls.Add(this.productNameTextBox);
             this.Controls.Add(this.dateLabel);
             this.Name = "SearchByProductNameForm";
-            this.Text = "SearchByProductNameForm";
+            this.Text = "Search by product name";
             ((System.ComponentModel.ISupportInitialize)(this.DataTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

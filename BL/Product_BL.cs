@@ -49,7 +49,6 @@ namespace BL
 
         public void AddNewProduct(Product product)
         {
-            RaiseProductArgumentException(product);
             this._productDao.AddNewProduct(product);
         }
 

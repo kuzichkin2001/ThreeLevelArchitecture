@@ -154,7 +154,7 @@ namespace PL
             this.Controls.Add(this.datePicker);
             this.Controls.Add(this.dateLabel);
             this.Name = "SearchBySaleDateForm";
-            this.Text = "SearchBySaleDateForm";
+            this.Text = "Search by sale date";
             ((System.ComponentModel.ISupportInitialize)(this.DataTable)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

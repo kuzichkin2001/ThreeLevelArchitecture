@@ -195,7 +195,7 @@ namespace PL
             this.Controls.Add(this.idTextBox);
             this.Controls.Add(this.idLabel);
             this.Name = "AddSaleInfoForm";
-            this.Text = "AddSaleInfoForm";
+            this.Text = "Add sale information";
             this.Load += new System.EventHandler(this.AddSaleInfoForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);

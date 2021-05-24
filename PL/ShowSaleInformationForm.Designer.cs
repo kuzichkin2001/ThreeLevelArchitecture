@@ -93,7 +93,7 @@ namespace PL
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.fullSaleInformation);
             this.Name = "ShowSaleInformationForm";
-            this.Text = "ShowSaleInformationForm";
+            this.Text = "Show all sale information";
             ((System.ComponentModel.ISupportInitialize)(this.fullSaleInformation)).EndInit();
             this.ResumeLayout(false);
 

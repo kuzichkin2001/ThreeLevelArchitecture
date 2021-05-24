@@ -50,7 +50,7 @@ namespace PL
             // idToDeleteTextBox
             // 
             this.idToDeleteTextBox.Location = new System.Drawing.Point(83, 87);
-            this.idToDeleteTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.idToDeleteTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.idToDeleteTextBox.Name = "idToDeleteTextBox";
             this.idToDeleteTextBox.Size = new System.Drawing.Size(285, 22);
             this.idToDeleteTextBox.TabIndex = 1;
@@ -58,7 +58,7 @@ namespace PL
             // deleteButton
             // 
             this.deleteButton.Location = new System.Drawing.Point(176, 149);
-            this.deleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.deleteButton.Margin = new System.Windows.Forms.Padding(4);
             this.deleteButton.Name = "deleteButton";
             this.deleteButton.Size = new System.Drawing.Size(100, 28);
             this.deleteButton.TabIndex = 2;
@@ -78,9 +78,9 @@ namespace PL
             this.Controls.Add(this.deleteButton);
             this.Controls.Add(this.idToDeleteTextBox);
             this.Controls.Add(this.idToDeleteLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "DeleteProductById";
-            this.Text = "DeleteProductById";
+            this.Text = "Delete product";
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

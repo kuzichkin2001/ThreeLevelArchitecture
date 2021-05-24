@@ -37,20 +37,20 @@ namespace PL
             this.deleteToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.productByIDToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saleInfoOnExistingProductToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.byProductNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bySaleDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.updateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.saleInfoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.DataTable = new System.Windows.Forms.DataGridView();
-            this.refreshButton = new System.Windows.Forms.Button();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.byProductNameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.bySaleDateToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.searchToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.refreshButton = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable)).BeginInit();
             this.SuspendLayout();
@@ -74,7 +74,7 @@ namespace PL
             this.addToolStripMenuItem,
             this.deleteToolStripMenuItem});
             this.mainToolStripMenuItem.Name = "mainToolStripMenuItem";
-            this.mainToolStripMenuItem.Size = new System.Drawing.Size(56, 26);
+            this.mainToolStripMenuItem.Size = new System.Drawing.Size(56, 24);
             this.mainToolStripMenuItem.Text = "Main";
             // 
             // addToolStripMenuItem
@@ -83,7 +83,7 @@ namespace PL
             this.newProductToolStripMenuItem,
             this.saleInfoToExistingProductToolStripMenuItem});
             this.addToolStripMenuItem.Name = "addToolStripMenuItem";
-            this.addToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.addToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
             this.addToolStripMenuItem.Text = "Add";
             // 
             // newProductToolStripMenuItem
@@ -106,7 +106,7 @@ namespace PL
             this.productByIDToolStripMenuItem,
             this.saleInfoOnExistingProductToolStripMenuItem});
             this.deleteToolStripMenuItem.Name = "deleteToolStripMenuItem";
-            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.deleteToolStripMenuItem.Size = new System.Drawing.Size(136, 26);
             this.deleteToolStripMenuItem.Text = "Delete";
             // 
             // productByIDToolStripMenuItem
@@ -123,6 +123,29 @@ namespace PL
             this.saleInfoOnExistingProductToolStripMenuItem.Text = "Sale info on existing product";
             this.saleInfoOnExistingProductToolStripMenuItem.Click += new System.EventHandler(this.saleInfoOnExistingProductToolStripMenuItem_Click);
             // 
+            // searchToolStripMenuItem
+            // 
+            this.searchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.byProductNameToolStripMenuItem,
+            this.bySaleDateToolStripMenuItem});
+            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
+            this.searchToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
+            this.searchToolStripMenuItem.Text = "Search";
+            // 
+            // byProductNameToolStripMenuItem
+            // 
+            this.byProductNameToolStripMenuItem.Name = "byProductNameToolStripMenuItem";
+            this.byProductNameToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.byProductNameToolStripMenuItem.Text = "By Product name";
+            this.byProductNameToolStripMenuItem.Click += new System.EventHandler(this.byProductNameToolStripMenuItem_Click);
+            // 
+            // bySaleDateToolStripMenuItem
+            // 
+            this.bySaleDateToolStripMenuItem.Name = "bySaleDateToolStripMenuItem";
+            this.bySaleDateToolStripMenuItem.Size = new System.Drawing.Size(204, 26);
+            this.bySaleDateToolStripMenuItem.Text = "By Sale date";
+            this.bySaleDateToolStripMenuItem.Click += new System.EventHandler(this.bySaleDateToolStripMenuItem_Click);
+            // 
             // updateToolStripMenuItem
             // 
             this.updateToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
@@ -134,7 +157,7 @@ namespace PL
             // saleInfoToolStripMenuItem
             // 
             this.saleInfoToolStripMenuItem.Name = "saleInfoToolStripMenuItem";
-            this.saleInfoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.saleInfoToolStripMenuItem.Size = new System.Drawing.Size(202, 26);
             this.saleInfoToolStripMenuItem.Text = "Sale information";
             this.saleInfoToolStripMenuItem.Click += new System.EventHandler(this.saleInfoToolStripMenuItem_Click);
             // 
@@ -158,6 +181,48 @@ namespace PL
             this.DataTable.Size = new System.Drawing.Size(1067, 446);
             this.DataTable.TabIndex = 1;
             // 
+            // Column1
+            // 
+            this.Column1.HeaderText = "ProductID";
+            this.Column1.MinimumWidth = 6;
+            this.Column1.Name = "Column1";
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Product name";
+            this.Column2.MinimumWidth = 6;
+            this.Column2.Name = "Column2";
+            // 
+            // Column3
+            // 
+            this.Column3.HeaderText = "Cost";
+            this.Column3.MinimumWidth = 6;
+            this.Column3.Name = "Column3";
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Is Selling";
+            this.Column4.MinimumWidth = 6;
+            this.Column4.Name = "Column4";
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Sale Percent";
+            this.Column5.MinimumWidth = 6;
+            this.Column5.Name = "Column5";
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Sale Start Date";
+            this.Column6.MinimumWidth = 6;
+            this.Column6.Name = "Column6";
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Sale End Date";
+            this.Column7.MinimumWidth = 6;
+            this.Column7.Name = "Column7";
+            // 
             // refreshButton
             // 
             this.refreshButton.Location = new System.Drawing.Point(16, 497);
@@ -168,71 +233,6 @@ namespace PL
             this.refreshButton.Text = "Refresh";
             this.refreshButton.UseVisualStyleBackColor = true;
             this.refreshButton.Click += new System.EventHandler(this.refreshButton_Click);
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Sale End Date";
-            this.Column7.MinimumWidth = 6;
-            this.Column7.Name = "Column7";
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Sale Start Date";
-            this.Column6.MinimumWidth = 6;
-            this.Column6.Name = "Column6";
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Sale Percent";
-            this.Column5.MinimumWidth = 6;
-            this.Column5.Name = "Column5";
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Is Selling";
-            this.Column4.MinimumWidth = 6;
-            this.Column4.Name = "Column4";
-            // 
-            // Column3
-            // 
-            this.Column3.HeaderText = "Cost";
-            this.Column3.MinimumWidth = 6;
-            this.Column3.Name = "Column3";
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Product name";
-            this.Column2.MinimumWidth = 6;
-            this.Column2.Name = "Column2";
-            // 
-            // Column1
-            // 
-            this.Column1.HeaderText = "ProductID";
-            this.Column1.MinimumWidth = 6;
-            this.Column1.Name = "Column1";
-            // 
-            // byProductNameToolStripMenuItem
-            // 
-            this.byProductNameToolStripMenuItem.Name = "byProductNameToolStripMenuItem";
-            this.byProductNameToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.byProductNameToolStripMenuItem.Text = "By Product name";
-            this.byProductNameToolStripMenuItem.Click += new System.EventHandler(this.byProductNameToolStripMenuItem_Click);
-            // 
-            // bySaleDateToolStripMenuItem
-            // 
-            this.bySaleDateToolStripMenuItem.Name = "bySaleDateToolStripMenuItem";
-            this.bySaleDateToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
-            this.bySaleDateToolStripMenuItem.Text = "By Sale date";
-            this.bySaleDateToolStripMenuItem.Click += new System.EventHandler(this.bySaleDateToolStripMenuItem_Click);
-            // 
-            // searchToolStripMenuItem
-            // 
-            this.searchToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.byProductNameToolStripMenuItem,
-            this.bySaleDateToolStripMenuItem});
-            this.searchToolStripMenuItem.Name = "searchToolStripMenuItem";
-            this.searchToolStripMenuItem.Size = new System.Drawing.Size(67, 24);
-            this.searchToolStripMenuItem.Text = "Search";
             // 
             // MainForm
             // 
@@ -245,7 +245,7 @@ namespace PL
             this.MainMenuStrip = this.menuStrip1;
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "MainForm";
-            this.Text = "Form1";
+            this.Text = "Shop data system";
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DataTable)).EndInit();

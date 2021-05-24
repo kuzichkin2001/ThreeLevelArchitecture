@@ -65,7 +65,7 @@ namespace PL
             // productNameTextBox
             // 
             this.productNameTextBox.Location = new System.Drawing.Point(19, 118);
-            this.productNameTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.productNameTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.productNameTextBox.Name = "productNameTextBox";
             this.productNameTextBox.Size = new System.Drawing.Size(305, 22);
             this.productNameTextBox.TabIndex = 1;
@@ -74,7 +74,7 @@ namespace PL
             // salePercentTextBox
             // 
             this.salePercentTextBox.Location = new System.Drawing.Point(19, 335);
-            this.salePercentTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.salePercentTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.salePercentTextBox.Name = "salePercentTextBox";
             this.salePercentTextBox.Size = new System.Drawing.Size(305, 22);
             this.salePercentTextBox.TabIndex = 3;
@@ -95,7 +95,7 @@ namespace PL
             // costTextBox
             // 
             this.costTextBox.Location = new System.Drawing.Point(19, 192);
-            this.costTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.costTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.costTextBox.Name = "costTextBox";
             this.costTextBox.Size = new System.Drawing.Size(305, 22);
             this.costTextBox.TabIndex = 5;
@@ -160,7 +160,7 @@ namespace PL
             // 
             this.saleStartDatePicker.Enabled = false;
             this.saleStartDatePicker.Location = new System.Drawing.Point(229, 407);
-            this.saleStartDatePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saleStartDatePicker.Margin = new System.Windows.Forms.Padding(4);
             this.saleStartDatePicker.Name = "saleStartDatePicker";
             this.saleStartDatePicker.Size = new System.Drawing.Size(27, 22);
             this.saleStartDatePicker.TabIndex = 10;
@@ -171,7 +171,7 @@ namespace PL
             this.saleEndDatePicker.CustomFormat = "DD.MM.YYYY";
             this.saleEndDatePicker.Enabled = false;
             this.saleEndDatePicker.Location = new System.Drawing.Point(517, 407);
-            this.saleEndDatePicker.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saleEndDatePicker.Margin = new System.Windows.Forms.Padding(4);
             this.saleEndDatePicker.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
             this.saleEndDatePicker.MinDate = new System.DateTime(2020, 1, 1, 0, 0, 0, 0);
             this.saleEndDatePicker.Name = "saleEndDatePicker";
@@ -189,7 +189,7 @@ namespace PL
             this.Column3});
             this.shortProductsData.Dock = System.Windows.Forms.DockStyle.Right;
             this.shortProductsData.Location = new System.Drawing.Point(576, 0);
-            this.shortProductsData.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.shortProductsData.Margin = new System.Windows.Forms.Padding(4);
             this.shortProductsData.Name = "shortProductsData";
             this.shortProductsData.RowHeadersWidth = 51;
             this.shortProductsData.Size = new System.Drawing.Size(491, 554);
@@ -217,7 +217,7 @@ namespace PL
             // 
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(19, 466);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(525, 73);
             this.button1.TabIndex = 13;
@@ -229,7 +229,7 @@ namespace PL
             // 
             this.saleStartDateTextBox.Enabled = false;
             this.saleStartDateTextBox.Location = new System.Drawing.Point(21, 406);
-            this.saleStartDateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saleStartDateTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.saleStartDateTextBox.Name = "saleStartDateTextBox";
             this.saleStartDateTextBox.Size = new System.Drawing.Size(199, 22);
             this.saleStartDateTextBox.TabIndex = 14;
@@ -238,7 +238,7 @@ namespace PL
             // 
             this.saleEndDateTextBox.Enabled = false;
             this.saleEndDateTextBox.Location = new System.Drawing.Point(309, 407);
-            this.saleEndDateTextBox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.saleEndDateTextBox.Margin = new System.Windows.Forms.Padding(4);
             this.saleEndDateTextBox.Name = "saleEndDateTextBox";
             this.saleEndDateTextBox.Size = new System.Drawing.Size(199, 22);
             this.saleEndDateTextBox.TabIndex = 15;
@@ -264,9 +264,9 @@ namespace PL
             this.Controls.Add(this.salePercentLabel);
             this.Controls.Add(this.productNameTextBox);
             this.Controls.Add(this.productNameLabel);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "AddNewProductForm";
-            this.Text = "AddNewProductForm";
+            this.Text = "Add new product";
             ((System.ComponentModel.ISupportInitialize)(this.shortProductsData)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
